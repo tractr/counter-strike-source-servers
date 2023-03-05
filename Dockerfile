@@ -2,7 +2,6 @@ FROM foxylion/steam-css:latest as classic
 
 # Override entrypoint
 ADD ./entrypoint.sh entrypoint.sh
-RUN chmod +x entrypoint.sh
 CMD ["./entrypoint.sh"]
 
 # Override configs

@@ -50,7 +50,7 @@ docker run -d --name css-server-27015 \
 
 ### Modified server.cfg
 
-The default server.cfg can also be overriden, but you can also only override some specific settings, therefore use the following pattern
+The default server.cfg can also be overridden, but you can also only override some specific settings, therefore use the following pattern
 
 ```
 -v /path/to/my-server.cfg:/home/steam/css/cstrike/cfg/my-server.cfg
@@ -71,6 +71,10 @@ Available configurations are listed [here](https://github.com/blackdevil72/SM-Hi
 You should set `sm_hns_enable 1` in the `server.cfg` file.
 
 ## Build the image
+
+```bash
+docker build . --tag tractr/counter-strike-source-servers:latest --target classic
+```
 
 ```bash
 docker build . --tag tractr/counter-strike-source-servers:hide-and-seek --target hide-and-seek
