@@ -68,8 +68,6 @@ Built from [foxylion/steam-css](https://hub.docker.com/r/foxylion/steam-css) wit
 
 Available configurations are listed [here](https://github.com/blackdevil72/SM-Hide-and-Seek).
 
-You should set `sm_hns_enable 1` in the `server.cfg` file.
-
 ## Build the image
 
 ```bash
