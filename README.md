@@ -12,7 +12,7 @@ Available configurations are listed [here](https://github.com/blackdevil72/SM-Hi
 
 You should set `sm_hns_enable 1` in the `server.cfg` file.
 
-Checkout the original image for more details: [foxylion/steam-css](https://hub.docker.com/r/foxylion/steam-css).
+Check the original [image on GitHub](https://github.com/foxylion/docker-steam-css) for more details.
 
 ## Build the image
 
