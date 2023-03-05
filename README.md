@@ -56,6 +56,10 @@ The default server.cfg can also be overriden, but you can also only override som
 -v /path/to/my-server.cfg:/home/steam/css/cstrike/cfg/my-server.cfg
 ```
 
+### More information
+
+Check the original [image on GitHub](https://github.com/foxylion/docker-steam-css) for more details.
+
 ## Hide and Seek
 
 Built from [foxylion/steam-css](https://hub.docker.com/r/foxylion/steam-css) with [Hide and Seek](https://forums.alliedmods.net/showthread.php?p=2647181) plugin.
@@ -65,8 +69,6 @@ Built from [foxylion/steam-css](https://hub.docker.com/r/foxylion/steam-css) wit
 Available configurations are listed [here](https://github.com/blackdevil72/SM-Hide-and-Seek).
 
 You should set `sm_hns_enable 1` in the `server.cfg` file.
-
-Check the original [image on GitHub](https://github.com/foxylion/docker-steam-css) for more details.
 
 ## Build the image
 
