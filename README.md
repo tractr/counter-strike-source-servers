@@ -23,6 +23,8 @@ docker build . --tag tractr/counter-strike-source-servers:hide-and-seek --target
 ### Build and push all images
 
 ```bash
+docker build . --tag tractr/counter-strike-source-servers:latest --target hide-and-seek && \
+docker push tractr/counter-strike-source-servers:latest && \
 docker build . --tag tractr/counter-strike-source-servers:hide-and-seek --target hide-and-seek && \
 docker push tractr/counter-strike-source-servers:hide-and-seek
 ```

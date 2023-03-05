@@ -1,6 +1,6 @@
 FROM foxylion/steam-css:latest as classic
 
-FROM classic as hideandseek
+FROM classic as hide-and-seek
 
 RUN wget https://github.com/blackdevil72/SM-Hide-and-Seek/releases/download/1.6.0/css_hide_and_seek_1.6.0.zip -O hns.zip \
     && unzip hns.zip \
