@@ -68,6 +68,12 @@ Built from [foxylion/steam-css](https://hub.docker.com/r/foxylion/steam-css) wit
 
 Available configurations are listed [here](https://github.com/blackdevil72/SM-Hide-and-Seek).
 
+## Gun Game
+
+Additional mod: https://forums.alliedmods.net/showthread.php?t=93977
+
+Contains custom maps. See [gun-game.mapcycle.txt](./config/gun-game.mapcycle.txt).
+
 ## Build the image
 
 ```bash
@@ -86,5 +92,7 @@ docker push tractr/counter-strike-source-servers:latest && \
 docker build . --tag tractr/counter-strike-source-servers:classic --target classic && \
 docker push tractr/counter-strike-source-servers:classic && \
 docker build . --tag tractr/counter-strike-source-servers:hide-and-seek --target hide-and-seek && \
-docker push tractr/counter-strike-source-servers:hide-and-seek
+docker push tractr/counter-strike-source-servers:hide-and-seek && \
+docker build . --tag tractr/counter-strike-source-servers:gun-game --target gun-game && \
+docker push tractr/counter-strike-source-servers:gun-game
 ```
