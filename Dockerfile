@@ -25,11 +25,16 @@ RUN echo "exec hide-and-seek.cfg" >> /home/steam/css/cstrike/cfg/server.cfg
 
 FROM classic as gun-game
 
-# https://forums.alliedmods.net/showthread.php?t=93977
 # Copy mod files
+# https://forums.alliedmods.net/showthread.php?t=93977
 COPY bin/sm_gungame-1.2.16.0.zip sm_gungame.zip
-RUN unzip sm_gungame.zip -d /home/steam/css/cstrike/ \
+RUN unzip -o sm_gungame.zip -d /home/steam/css/cstrike/ \
     && rm sm_gungame.zip
+# Copy DM mod
+# https://forums.alliedmods.net/showthread.php?t=103242
+COPY bin/sm_ggdm-1.8.0.zip sm_ggdm.zip
+RUN unzip -o sm_ggdm.zip -d /home/steam/css/cstrike/ \
+    && rm sm_ggdm.zip
 
 # Copy maps
 RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_alleycat.bsp -O /home/steam/css/cstrike/maps/gg_alleycat.bsp
