@@ -25,6 +25,14 @@ RUN echo "exec hide-and-seek.cfg" >> /home/steam/css/cstrike/cfg/server.cfg
 
 FROM classic as gun-game
 
+# Copy maps
+RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_alleycat.bsp -O /home/steam/css/cstrike/maps/gg_alleycat.bsp
+RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_autumn.bsp -O /home/steam/css/cstrike/maps/gg_autumn.bsp
+RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_block9.bsp -O /home/steam/css/cstrike/maps/gg_block9.bsp
+RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_canyon.bsp -O /home/steam/css/cstrike/maps/gg_canyon.bsp
+RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_factory.bsp -O /home/steam/css/cstrike/maps/gg_factory.bsp
+RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_overpass.bsp -O /home/steam/css/cstrike/maps/gg_overpass.bsp
+
 # Copy mod files
 # https://forums.alliedmods.net/showthread.php?t=93977
 COPY bin/sm_gungame-1.2.16.0.zip sm_gungame.zip
@@ -36,17 +44,9 @@ COPY bin/sm_ggdm-1.8.0.zip sm_ggdm.zip
 RUN unzip -o sm_ggdm.zip -d /home/steam/css/cstrike/ \
     && rm sm_ggdm.zip
 
-# Copy maps
-RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_alleycat.bsp -O /home/steam/css/cstrike/maps/gg_alleycat.bsp
-RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_autumn.bsp -O /home/steam/css/cstrike/maps/gg_autumn.bsp
-RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_block9.bsp -O /home/steam/css/cstrike/maps/gg_block9.bsp
-RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_canyon.bsp -O /home/steam/css/cstrike/maps/gg_canyon.bsp
-RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_factory.bsp -O /home/steam/css/cstrike/maps/gg_factory.bsp
-RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_overpass.bsp -O /home/steam/css/cstrike/maps/gg_overpass.bsp
-
 # Copy gun game configs
-COPY --chown=steam:steam ./config/gun-game.cfg /home/steam/css/cstrike/cfg/gun-game.cfg
-COPY --chown=steam:steam ./config/gun-game.mapcycle.txt /home/steam/css/cstrike/cfg/mapcycle.txt
+COPY --chown=steam:steam ./config/gun-game/server/* /home/steam/css/cstrike/cfg/
+COPY --chown=steam:steam ./config/gun-game/plugin/* /home/steam/css/cstrike/cfg/gungame/css/
 
 # Add line to server.cfg to load gun-game.cfg
 RUN echo "exec gun-game.cfg" >> /home/steam/css/cstrike/cfg/server.cfg
