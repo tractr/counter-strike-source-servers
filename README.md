@@ -39,7 +39,7 @@ docker run -d --name css-server-27015 \
 | `CSS_MAXPLAYERS`  | Max players                               | `16`                            |
 | `CSS_STARTMAP`    | Start map                                 | `de_dust2`                      |
 | `CSS_HOSTNAME`    | Server name                               | `Counter-Strike: Source Server` |
-| `CSS_SVLAN`       | LAN server                                | `0`                             |
+| `CSS_SVLAN`       | LAN server                                | `1`                             |
 | `CSS_BOTS_FILL`   | Add bots to reach a min number of players | `0`                             |
 
 ### Custom mapcycle.txt
@@ -73,6 +73,10 @@ Available configurations are listed [here](https://github.com/blackdevil72/SM-Hi
 Additional mod: https://forums.alliedmods.net/showthread.php?t=93977
 
 Contains custom maps. See [gun-game.mapcycle.txt](./config/gun-game.mapcycle.txt).
+
+### Deathmatch
+
+Additional mod for deathmatch: [DeathMatch:SM](https://forums.alliedmods.net/showthread.php?p=929190) and [CS:S DM](https://gamebanana.com/mods/download/34623).
 
 ## Build the image
 

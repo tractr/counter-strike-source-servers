@@ -38,15 +38,23 @@ RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/
 COPY bin/sm_gungame-1.2.16.0.zip sm_gungame.zip
 RUN unzip -o sm_gungame.zip -d /home/steam/css/cstrike/ \
     && rm sm_gungame.zip
-# Copy DM mod
+
+# Copy GGDM mod
 # https://forums.alliedmods.net/showthread.php?t=103242
 COPY bin/sm_ggdm-1.8.0.zip sm_ggdm.zip
 RUN unzip -o sm_ggdm.zip -d /home/steam/css/cstrike/ \
     && rm sm_ggdm.zip
 
+# Copy CSS DM mod
+# https://forums.alliedmods.net/showthread.php?t=160097
+COPY bin/cssdm-214.zip cssdm.zip
+RUN unzip -o cssdm.zip -d /home/steam/css/cstrike/ \
+    && rm cssdm.zip
+
 # Copy gun game configs
 COPY --chown=steam:steam ./config/gun-game/server/* /home/steam/css/cstrike/cfg/
 COPY --chown=steam:steam ./config/gun-game/plugin/* /home/steam/css/cstrike/cfg/gungame/css/
+COPY --chown=steam:steam ./config/cssdm/plugin/* /home/steam/css/cstrike/cfg/cssdm/
 
 # Add line to server.cfg to load gun-game.cfg
 RUN echo "exec gun-game.cfg" >> /home/steam/css/cstrike/cfg/server.cfg

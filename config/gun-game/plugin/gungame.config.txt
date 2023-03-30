@@ -21,7 +21,7 @@
          *      "taser,hegrenade,molotov,incgrenade"    - Default value
          *      ""                                      - Disabled
          */
-        "FastSwitchSkipWeapons" ""
+        "FastSwitchSkipWeapons" "hegrenade"
 
         /**
          * Switch weapon without delays after level up.
@@ -30,7 +30,7 @@
          *      1 - Enabled.
          *      0 - Disabled.
          */
-        "FastSwitchOnLevelUp" "1"
+        "FastSwitchOnLevelUp" "0"
 
         /**
          * Switch weapon without delays when player changes weapon by himself.
@@ -68,7 +68,7 @@
          *      0 - Disabled.
          *      1-N - Number of seconds.
          */
-        "EndGameDelay" "3"
+        "EndGameDelay" "0"
 
         /**
          * Sets how to finish the game after someone has won.
@@ -77,7 +77,7 @@
          *      0 - Normal game end with scoreboard, vote next map valve menu and weapon drops.
          *      1 - Silent game end.
          */
-        "EndGameSilent" "1"
+        "EndGameSilent" "0"
 
         /**
          * Multiply sound effects volume.
@@ -100,7 +100,7 @@
          *     1 - Block weapon switch
          *     0 - Do not block weapon switch
          */
-        "BlockWeaponSwitchIfKnife" "0"
+        "BlockWeaponSwitchIfKnife" "1"
 
         /**
          * Block weapon switch if you get next hegrenade 
@@ -112,7 +112,7 @@
          *     1 - Block weapon switch
          *     0 - Do not block weapon switch
          */
-        "BlockWeaponSwitchOnNade" "0"
+        "BlockWeaponSwitchOnNade" "1"
 
         /** 
          * Show players level message in hint box instead of chat.
@@ -128,7 +128,7 @@
         "ShowLeaderInHintBox" "0"
 
         /* Show leader's weapon name in chat with leading message */
-        "ShowLeaderWeapon" "1"
+        "ShowLeaderWeapon" "0"
         
         /**
          * Strip dead players weapon
@@ -138,7 +138,7 @@
          *  1 - Enabled for alive and dead players (alive players can not drop guns)
          *  2 - Enabled for dead players only (alive players can drop guns)
          */
-        "StripDeadPlayersWeapon" "0"
+        "StripDeadPlayersWeapon" "1"
         
         /* Show levels in scoreboard */
         "LevelsInScoreboard" "1"
@@ -153,7 +153,7 @@
         "RestoreLevelOnReconnect" "1"
 
         /* Allow level up after round end */
-        "AllowLevelUpAfterRoundEnd" "0"
+        "AllowLevelUpAfterRoundEnd" "1"
     
         /* Show multikill hints in chat */
         "MultiKillChat" "0"
@@ -467,7 +467,7 @@
         "ExtraNade" "0"
 
         /* Gives unlimited hegrenades to the player if he is on nage level */
-        "UnlimitedNades" "0"
+        "UnlimitedNades" "1"
 
         /**
          * Enable UnlimitedNades depending on the number of players in team.
@@ -524,7 +524,7 @@
         "WarmupEnabled" "1"
 
         /* Warmup time length */
-        "WarmupTimeLength" "10"
+        "WarmupTimeLength" "30"
 
         /**
          * Give random weapon on warmup.
