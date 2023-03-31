@@ -80,7 +80,6 @@ Contains custom maps. See [gun-game.mapcycle.txt](./config/gun-game.mapcycle.txt
 ### Deathmatch
 
 Additional mod for deathmatch: [DeathMatch:SM](https://forums.alliedmods.net/showthread.php?p=929190)
-and [CS:S DM](https://gamebanana.com/mods/download/34623).
 
 ## Build the image
 

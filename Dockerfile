@@ -45,16 +45,19 @@ COPY bin/sm_ggdm-1.8.0.zip sm_ggdm.zip
 RUN unzip -o sm_ggdm.zip -d /home/steam/css/cstrike/ \
     && rm sm_ggdm.zip
 
-# Copy CSS DM mod
-# https://forums.alliedmods.net/showthread.php?t=160097
-COPY bin/cssdm-214.zip cssdm.zip
-RUN unzip -o cssdm.zip -d /home/steam/css/cstrike/ \
-    && rm cssdm.zip
+# Copy Disable round end
+# https://forums.alliedmods.net/showthread.php?t=80662
+COPY --chown=steam:steam bin/bot_endround.smx /home/steam/css/cstrike/addons/sourcemod/plugins/bot_endround.smx
+
+# Team change
+# https://forums.alliedmods.net/showthread.php?t=197780
+COPY bin/sm_teamchange-1.0.zip sm_teamchange.zip
+RUN unzip -o sm_teamchange.zip -d /home/steam/css/cstrike/ \
+    && rm sm_teamchange.zip
 
 # Copy gun game configs
 COPY --chown=steam:steam ./config/gun-game/server/* /home/steam/css/cstrike/cfg/
 COPY --chown=steam:steam ./config/gun-game/plugin/* /home/steam/css/cstrike/cfg/gungame/css/
-COPY --chown=steam:steam ./config/cssdm/plugin/* /home/steam/css/cstrike/cfg/cssdm/
 
 # Add line to server.cfg to load gun-game.cfg
 RUN echo "exec gun-game.cfg" >> /home/steam/css/cstrike/cfg/server.cfg

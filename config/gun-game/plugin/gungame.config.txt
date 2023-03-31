@@ -138,7 +138,7 @@
          *  1 - Enabled for alive and dead players (alive players can not drop guns)
          *  2 - Enabled for dead players only (alive players can drop guns)
          */
-        "StripDeadPlayersWeapon" "1"
+        "StripDeadPlayersWeapon" "0"
         
         /* Show levels in scoreboard */
         "LevelsInScoreboard" "1"
@@ -218,7 +218,7 @@
          * 0 - Disabled
          * 1 - Enabled
          */
-        "FFA" "1"
+        "FFA" "0"
 
         /** 
          * Enable friendly fire on defined level.
@@ -467,7 +467,7 @@
         "ExtraNade" "0"
 
         /* Gives unlimited hegrenades to the player if he is on nage level */
-        "UnlimitedNades" "1"
+        "UnlimitedNades" "0"
 
         /**
          * Enable UnlimitedNades depending on the number of players in team.
@@ -487,7 +487,7 @@
          * This option is disabled 
          * if less then 2.
          */
-        "NumberOfNades" "0"
+        "NumberOfNades" "5"
         
         /* ----- [1.6. multi level] ----- */
         
@@ -595,7 +595,7 @@
         "DisplayWinnerUrl" ""
 
         /* Show player rank on win in chat */
-        "ShowPlayerRankOnWin" "1"
+        "ShowPlayerRankOnWin" "0"
 
         /**
          * If player wins on bot, then dont add win in stats.
