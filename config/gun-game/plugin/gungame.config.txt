@@ -128,7 +128,7 @@
         "ShowLeaderInHintBox" "0"
 
         /* Show leader's weapon name in chat with leading message */
-        "ShowLeaderWeapon" "0"
+        "ShowLeaderWeapon" "1"
         
         /**
          * Strip dead players weapon
