@@ -28,19 +28,20 @@ docker run -d --name css-server-27015 \
 
 ### Available environment variables
 
-| Name              | Description                               | Default Value                   |
-|-------------------|-------------------------------------------|---------------------------------|
-| `RCON_PASSWORD`   | RCON password                             | Random password                 |
-| `CSS_PASSWORD`    | Server password                           |                                 |
-| `CSS_PORT`        | Server port                               | `27015`                         |
-| `CSS_TV_PORT`     | TV port                                   | `27020`                         |
-| `CSS_CLIENT_PORT` | Client port                               | `27005`                         |
-| `CSS_TICKRATE`    | Server tickrate                           | `100`                           |
-| `CSS_MAXPLAYERS`  | Max players                               | `16`                            |
-| `CSS_STARTMAP`    | Start map                                 | `de_dust2`                      |
-| `CSS_HOSTNAME`    | Server name                               | `Counter-Strike: Source Server` |
-| `CSS_SVLAN`       | LAN server                                | `1`                             |
-| `CSS_BOTS_FILL`   | Add bots to reach a min number of players | `0`                             |
+| Name                  | Description                                        | Default Value                   |
+|-----------------------|----------------------------------------------------|---------------------------------|
+| `RCON_PASSWORD`       | RCON password                                      | Random password                 |
+| `CSS_PASSWORD`        | Server password                                    |                                 |
+| `CSS_PORT`            | Server port                                        | `27015`                         |
+| `CSS_TV_PORT`         | TV port                                            | `27020`                         |
+| `CSS_CLIENT_PORT`     | Client port                                        | `27005`                         |
+| `CSS_TICKRATE`        | Server tickrate                                    | `100`                           |
+| `CSS_MAXPLAYERS`      | Max players                                        | `16`                            |
+| `CSS_STARTMAP`        | Start map                                          | `de_dust2`                      |
+| `CSS_HOSTNAME`        | Server name                                        | `Counter-Strike: Source Server` |
+| `CSS_SVLAN`           | LAN server                                         | `1`                             |
+| `CSS_BOTS_FILL`       | Add bots to reach a min number of players          | `0`                             |
+| `CSS_BOTS_DIFFICULTY` | Set Bot Difficulty 0=easy 1=normal 2=hard 3=expert | `1`                             |
 
 ### Custom mapcycle.txt
 
@@ -50,7 +51,8 @@ docker run -d --name css-server-27015 \
 
 ### Modified server.cfg
 
-The default server.cfg can also be overridden, but you can also only override some specific settings, therefore use the following pattern
+The default server.cfg can also be overridden, but you can also only override some specific settings, therefore use the
+following pattern
 
 ```
 -v /path/to/my-server.cfg:/home/steam/css/cstrike/cfg/my-server.cfg
@@ -62,7 +64,8 @@ Check the original [image on GitHub](https://github.com/foxylion/docker-steam-cs
 
 ## Hide and Seek
 
-Built from [foxylion/steam-css](https://hub.docker.com/r/foxylion/steam-css) with [Hide and Seek](https://forums.alliedmods.net/showthread.php?p=2647181) plugin.
+Built from [foxylion/steam-css](https://hub.docker.com/r/foxylion/steam-css)
+with [Hide and Seek](https://forums.alliedmods.net/showthread.php?p=2647181) plugin.
 
 ### Configuration
 
@@ -76,7 +79,8 @@ Contains custom maps. See [gun-game.mapcycle.txt](./config/gun-game.mapcycle.txt
 
 ### Deathmatch
 
-Additional mod for deathmatch: [DeathMatch:SM](https://forums.alliedmods.net/showthread.php?p=929190) and [CS:S DM](https://gamebanana.com/mods/download/34623).
+Additional mod for deathmatch: [DeathMatch:SM](https://forums.alliedmods.net/showthread.php?p=929190)
+and [CS:S DM](https://gamebanana.com/mods/download/34623).
 
 ## Build the image
 
