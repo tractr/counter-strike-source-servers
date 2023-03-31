@@ -21,7 +21,7 @@
          *      "taser,hegrenade,molotov,incgrenade"    - Default value
          *      ""                                      - Disabled
          */
-        "FastSwitchSkipWeapons" "hegrenade"
+        "FastSwitchSkipWeapons" ""
 
         /**
          * Switch weapon without delays after level up.
@@ -68,7 +68,7 @@
          *      0 - Disabled.
          *      1-N - Number of seconds.
          */
-        "EndGameDelay" "0"
+        "EndGameDelay" "3"
 
         /**
          * Sets how to finish the game after someone has won.
@@ -77,7 +77,7 @@
          *      0 - Normal game end with scoreboard, vote next map valve menu and weapon drops.
          *      1 - Silent game end.
          */
-        "EndGameSilent" "0"
+        "EndGameSilent" "1"
 
         /**
          * Multiply sound effects volume.
@@ -100,7 +100,7 @@
          *     1 - Block weapon switch
          *     0 - Do not block weapon switch
          */
-        "BlockWeaponSwitchIfKnife" "1"
+        "BlockWeaponSwitchIfKnife" "0"
 
         /**
          * Block weapon switch if you get next hegrenade 
@@ -112,7 +112,7 @@
          *     1 - Block weapon switch
          *     0 - Do not block weapon switch
          */
-        "BlockWeaponSwitchOnNade" "1"
+        "BlockWeaponSwitchOnNade" "0"
 
         /** 
          * Show players level message in hint box instead of chat.
@@ -153,7 +153,7 @@
         "RestoreLevelOnReconnect" "1"
 
         /* Allow level up after round end */
-        "AllowLevelUpAfterRoundEnd" "1"
+        "AllowLevelUpAfterRoundEnd" "0"
     
         /* Show multikill hints in chat */
         "MultiKillChat" "0"
@@ -595,7 +595,7 @@
         "DisplayWinnerUrl" ""
 
         /* Show player rank on win in chat */
-        "ShowPlayerRankOnWin" "0"
+        "ShowPlayerRankOnWin" "1"
 
         /**
          * If player wins on bot, then dont add win in stats.
