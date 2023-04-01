@@ -1,6 +1,12 @@
 gg_alleycat
+fy_warehouse_07
 gg_autumn
+fy_assault
 gg_block9
+fy_hrabova
 gg_canyon
+fy_highrise_09
 gg_factory
+fy_duo
 gg_overpass
+fy_snow_redux

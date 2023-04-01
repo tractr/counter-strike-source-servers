@@ -23,6 +23,7 @@ docker run -d --name css-server-27015 \
            -e CSS_HOSTNAME="My server name" \
            -e CSS_SVLAN="1" \
            -e CSS_BOTS_FILL="8" \
+           -e CSS_BOTS_DIFFICULTY="3" \
            tractr/counter-strike-source-servers:latest
 ```
 

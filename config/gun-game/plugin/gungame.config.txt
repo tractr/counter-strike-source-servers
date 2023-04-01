@@ -128,7 +128,7 @@
         "ShowLeaderInHintBox" "0"
 
         /* Show leader's weapon name in chat with leading message */
-        "ShowLeaderWeapon" "1"
+        "ShowLeaderWeapon" "0"
         
         /**
          * Strip dead players weapon
@@ -524,7 +524,7 @@
         "WarmupEnabled" "1"
 
         /* Warmup time length */
-        "WarmupTimeLength" "30"
+        "WarmupTimeLength" "10"
 
         /**
          * Give random weapon on warmup.

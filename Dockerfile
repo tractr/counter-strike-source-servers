@@ -26,12 +26,9 @@ RUN echo "exec hide-and-seek.cfg" >> /home/steam/css/cstrike/cfg/server.cfg
 FROM classic as gun-game
 
 # Copy maps
-RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_alleycat.bsp -O /home/steam/css/cstrike/maps/gg_alleycat.bsp
-RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_autumn.bsp -O /home/steam/css/cstrike/maps/gg_autumn.bsp
-RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_block9.bsp -O /home/steam/css/cstrike/maps/gg_block9.bsp
-RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_canyon.bsp -O /home/steam/css/cstrike/maps/gg_canyon.bsp
-RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_factory.bsp -O /home/steam/css/cstrike/maps/gg_factory.bsp
-RUN wget https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_overpass.bsp -O /home/steam/css/cstrike/maps/gg_overpass.bsp
+COPY ./config/gun-game/maps-to-download.txt maps-to-download.txt
+RUN wget -i maps-to-download.txt -P /home/steam/css/cstrike/maps/
+RUN rm maps-to-download.txt
 
 # Copy mod files
 # https://forums.alliedmods.net/showthread.php?t=93977

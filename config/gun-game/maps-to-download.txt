@@ -1,0 +1,17 @@
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_alleycat.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_autumn.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_block9.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_canyon.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_factory.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_overpass.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_warehouse_07.nav
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_warehouse_07.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_snow_redux.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_hrabova.nav
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_hrabova.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_highrise_09.nav
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_highrise_09.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_duo.nav
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_duo.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_assault.nav
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_assault.bsp
