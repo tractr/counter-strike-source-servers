@@ -165,7 +165,7 @@
         "VoteLevelLessWeaponCount" "2"
         
         /* Display a join message, popup giving players instructions on how to play */
-        "JoinMessage" "1"
+        "JoinMessage" "0"
 
         /** 
          * Level down playr if they kill themself by WorldSpawn Suicide.
@@ -218,7 +218,7 @@
          * 0 - Disabled
          * 1 - Enabled
          */
-        "FFA" "0"
+        "FFA" "1"
 
         /** 
          * Enable friendly fire on defined level.
@@ -595,7 +595,7 @@
         "DisplayWinnerUrl" ""
 
         /* Show player rank on win in chat */
-        "ShowPlayerRankOnWin" "1"
+        "ShowPlayerRankOnWin" "0"
 
         /**
          * If player wins on bot, then dont add win in stats.
