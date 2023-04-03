@@ -7,6 +7,10 @@ CMD ["./entrypoint.sh"]
 # Override configs
 COPY --chown=steam:steam ./config/server.cfg /home/steam/css/cstrike/cfg/server.cfg
 
+# Remove unwated plugins
+RUN rm /home/steam/css/cstrike/addons/sourcemod/plugins/gem_damage_report.smx
+COPY --chown=steam:steam ./config/sm_quakesounds.cfg /home/steam/css/cstrike/cfg/sourcemod/sm_quakesounds.cfg
+
 FROM classic as hide-and-seek
 
 RUN wget https://github.com/blackdevil72/SM-Hide-and-Seek/releases/download/1.6.0/css_hide_and_seek_1.6.0.zip -O hns.zip \
