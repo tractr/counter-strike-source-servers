@@ -13,16 +13,21 @@ COPY --chown=steam:steam ./config/sm_quakesounds.cfg /home/steam/css/cstrike/cfg
 
 FROM classic as hide-and-seek
 
+# Copy maps
+COPY ./config/hide-and-seek/maps-to-download.txt maps-to-download.txt
+RUN wget -i maps-to-download.txt -P /home/steam/css/cstrike/maps/
+RUN rm maps-to-download.txt
+
+# Install hide and seek mod
 RUN wget https://github.com/blackdevil72/SM-Hide-and-Seek/releases/download/1.6.0/css_hide_and_seek_1.6.0.zip -O hns.zip \
     && unzip hns.zip \
     && rm hns.zip
-
 # Move all files contained in ./css_hide_and_seek_1.6.0/upload\ to\ server/ to /home/steam/css/cstrike and merge folders
 RUN cp -r css_hide_and_seek_1.6.0/upload\ to\ server/* /home/steam/css/cstrike/ \
     && rm -rf css_hide_and_seek_1.6.0
 
 # Copy hide and seek configs
-COPY --chown=steam:steam ./config/hide-and-seek.cfg /home/steam/css/cstrike/cfg/hide-and-seek.cfg
+COPY --chown=steam:steam ./config/hide-and-seek/server/* /home/steam/css/cstrike/cfg/
 
 # Add line to server.cfg to load hide-and-seek.cfg
 RUN echo "exec hide-and-seek.cfg" >> /home/steam/css/cstrike/cfg/server.cfg

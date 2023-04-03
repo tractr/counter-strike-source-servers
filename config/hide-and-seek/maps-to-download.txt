@@ -1,0 +1,8 @@
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/hns_neighbourhood_newguy.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/hns_ytt_aztec.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_assault.nav
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_assault.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_warehouse_07.nav
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_warehouse_07.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_hrabova.nav
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_hrabova.bsp
