@@ -218,7 +218,7 @@
          * 0 - Disabled
          * 1 - Enabled
          */
-        "FFA" "1"
+        "FFA" "0"
 
         /** 
          * Enable friendly fire on defined level.
@@ -556,7 +556,7 @@
          * 0 - Disable
          * 1..N - Levels to loose
          */
-        "TkLooseLevel" "0"
+        "TkLooseLevel" "1"
     
         /* ===== [3. GUNGAME AFK CONFIG] ===== */
         
