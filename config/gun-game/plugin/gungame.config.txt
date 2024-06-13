@@ -138,7 +138,7 @@
          *  1 - Enabled for alive and dead players (alive players can not drop guns)
          *  2 - Enabled for dead players only (alive players can drop guns)
          */
-        "StripDeadPlayersWeapon" "0"
+        "StripDeadPlayersWeapon" "2"
 
         /* Show levels in scoreboard */
         "LevelsInScoreboard" "1"
