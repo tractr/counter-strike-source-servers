@@ -15,3 +15,16 @@ https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_d
 https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_duo.bsp
 https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_assault.nav
 https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_assault.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_one_tower.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_rmdeath2.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_pipe_construct.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_no90.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_met_avengers.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_halo_gold.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_halo.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_death_arches.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_aztec_ultimate.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_2012.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_veranda3.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_snow_temple.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_rvb_complex.bsp
