@@ -1,4 +1,4 @@
-FROM foxylion/steam-css:latest as classic
+FROM foxylion/steam-css:latest AS classic
 
 # Override entrypoint
 ADD ./entrypoint.sh entrypoint.sh
@@ -11,7 +11,7 @@ COPY --chown=steam:steam ./config/server.cfg /home/steam/css/cstrike/cfg/server.
 RUN rm /home/steam/css/cstrike/addons/sourcemod/plugins/gem_damage_report.smx
 COPY --chown=steam:steam ./config/sm_quakesounds.cfg /home/steam/css/cstrike/cfg/sourcemod/sm_quakesounds.cfg
 
-FROM classic as hide-and-seek
+FROM classic AS hide-and-seek
 
 # Copy maps
 COPY ./config/hide-and-seek/maps-to-download.txt maps-to-download.txt
@@ -32,7 +32,7 @@ COPY --chown=steam:steam ./config/hide-and-seek/server/* /home/steam/css/cstrike
 # Add line to server.cfg to load hide-and-seek.cfg
 RUN echo "exec hide-and-seek.cfg" >> /home/steam/css/cstrike/cfg/server.cfg
 
-FROM classic as gun-game
+FROM classic AS gun-game
 
 # Copy maps
 COPY ./config/gun-game/maps-to-download.txt maps-to-download.txt

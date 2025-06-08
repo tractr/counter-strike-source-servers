@@ -28,3 +28,10 @@ https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_2
 https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_veranda3.bsp
 https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_snow_temple.bsp
 https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/fy_rvb_complex.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_dustfort_barash.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_crystal_roundabout.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_dust_groove_barash.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_aztec64_dust.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_ezio_poolday.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/de_ccsbase_barash_v2.bsp
+https://tractr-lan-games-assets.s3.amazonaws.com/counter-strike-source/maps/gg_aim_noobz_poolday.bsp
